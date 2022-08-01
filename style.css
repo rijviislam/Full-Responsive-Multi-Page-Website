@@ -183,3 +183,54 @@ h3 {
         flex-direction: column;
     }
 }
+/* CAMPUS    */
+.campus {
+    margin: auto;
+    padding-top: 3rem;
+    width: 80%;
+    text-align: center;
+}
+.campus__container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.campus__box {
+    flex-basis: 32%;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.campus__box img {
+    width: 100%;
+    display: block;
+}
+.image__title {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.image__title:hover {
+    background-color: rgba(226, 0, 0, 0.7);
+}
+.campus__box h3 {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    color: #EEEE;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ;
+}
+.campus__box:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
