@@ -66,26 +66,30 @@ nav img {
 .nav__item ul li:hover::after {
     width: 100%;
 }
+
 .text__box {
     width: 90%;
     color: #FFF;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .text__box h1 {
- font-size: 62px;
- color: #EEEE;
- font-family: 'Poppins', sans-serif;
+    font-size: 62px;
+    color: #EEEE;
+    font-family: 'Poppins', sans-serif;
 }
-.text__box p{
+
+.text__box p {
     margin: 10px 0 5rem;
     color: #eeee;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
+
 .hero__button {
     display: inline-block;
     color: #FFF;
@@ -96,23 +100,28 @@ nav img {
     position: relative;
     cursor: pointer;
 }
+
 .hero__button:hover {
     border: 2px solid #F44336;
     background: #F44336;
     transition: 1s;
 }
+
 nav .bx {
     display: none;
 }
+
 @media(max-width:700px) {
     .text__box h1 {
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
-       }
-       .nav__item ul li {
+    }
+
+    .nav__item ul li {
         display: block;
-       }
-       .nav__item {
+    }
+
+    .nav__item {
         position: absolute;
         background: #F44336;
         width: 200px;
@@ -122,17 +131,19 @@ nav .bx {
         text-align: left;
         z-index: 2;
         transition: 1s;
-       }
-       nav .bx {
+    }
+
+    nav .bx {
         display: block;
         color: #FFFF;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
-       }
-       .nav__item ul {
+    }
+
+    .nav__item ul {
         padding: 2rem;
-       }
+    }
 }
 
 /* COURSE   */
@@ -142,10 +153,12 @@ nav .bx {
     text-align: center;
     padding-top: 5rem;
 }
+
 h1 {
     font-size: 36px;
     font-weight: 600;
 }
+
 p {
     color: rgba(129, 127, 127, 0.933);
     font-size: 14px;
@@ -153,14 +166,16 @@ p {
     line-height: 22px;
     padding: 10px;
 }
+
 .course__container {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    
+
 }
-.course__box{
+
+.course__box {
     /* border: 2px solid gray; */
     flex-basis: 31%;
     border-radius: 5px;
@@ -170,19 +185,23 @@ p {
     background-color: #EEEE;
     transition: 0.5s;
 }
+
 h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
+
 .course__box:hover {
- box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
+
 @media(max-width:700px) {
     .course__container {
         flex-direction: column;
     }
 }
+
 /* CAMPUS    */
 .campus {
     margin: auto;
@@ -190,11 +209,13 @@ h3 {
     width: 80%;
     text-align: center;
 }
+
 .campus__container {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
+
 .campus__box {
     flex-basis: 32%;
     border-radius: 5px;
@@ -202,10 +223,12 @@ h3 {
     position: relative;
     overflow: hidden;
 }
+
 .campus__box img {
     width: 100%;
     display: block;
 }
+
 .image__title {
     background-color: transparent;
     width: 100%;
@@ -215,9 +238,11 @@ h3 {
     left: 0;
     transition: 0.5s;
 }
+
 .image__title:hover {
     background-color: rgba(226, 0, 0, 0.7);
 }
+
 .campus__box h3 {
     width: 100%;
     font-size: 26px;
@@ -228,12 +253,14 @@ h3 {
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
-    transition: 0.5s ;
+    transition: 0.5s;
 }
-.campus__box:hover h3{
-  bottom: 49%;
-  opacity: 1;
+
+.campus__box:hover h3 {
+    bottom: 49%;
+    opacity: 1;
 }
+
 @media(max-width:700px) {
     .campus__container {
         flex-direction: column;
@@ -247,31 +274,152 @@ h3 {
     width: 80%;
     text-align: center;
 }
+
 .facilities__container {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
+
 .facilities__box {
     flex-basis: 31%;
     border-radius: 5px;
-    text-align: left; 
+    text-align: left;
     margin-bottom: 5%;
 }
+
 .facilities__box img {
     width: 100%;
     border-radius: 5px;
 }
+
 .facilities__box h3 {
     margin: 1rem 0;
     text-align: left;
 }
+
 .facilities__box p {
     margin: 0;
     padding: 0;
 }
+
 @media(max-width:700px) {
     .facilities__container {
         flex-direction: column;
     }
+}
+
+/* TESTIMONIAL   */
+.testimoninal {
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.testimonial__container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial__box {
+    flex-basis: 45%;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    text-align: left;
+    background-color: #EEEE;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__box img {
+    height: 40px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.image__and__para {
+    display: flex;
+}
+
+.testimonial__box p {
+    padding: 0;
+}
+
+.testimonial__box h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.nam__nad__review {
+    padding-left: 5rem;
+}
+
+.nam__nad__review .bx {
+    color: #F44336;
+}
+
+@media(max-width:700px) {
+    .testimonial__container {
+        flex-direction: column;
+    }
+}
+
+/* CALL TO ACTION    */
+.call__to__action {
+    margin: 4rem auto;
+    padding: 5rem 0;
+    width: 80%;
+    text-align: center;
+    background-image: url(./image/eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.call__to__action h1 {
+    color: #FFF;
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+@media(max-width) {
+    .call__to__action h1 {
+        font-size: 24px;
+    }
+}
+
+/* FOOTER    */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer h4 {
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.footer p {
+    padding: 0 10rem;
+}
+
+.incons .bx {
+    color: black;
+    cursor: pointer;
+    margin: 0 13px;
+    padding: 1rem 0;
+}
+
+.bx-heart {
+    margin: 0 13px;
+    padding: 1rem 0;
+    color: #F44336;
 }
