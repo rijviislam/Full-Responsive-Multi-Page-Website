@@ -134,3 +134,52 @@ nav .bx {
         padding: 2rem;
        }
 }
+
+/* COURSE   */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+p {
+    color: rgba(129, 127, 127, 0.933);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.course__container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+}
+.course__box{
+    /* border: 2px solid gray; */
+    flex-basis: 31%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background-color: #EEEE;
+    transition: 0.5s;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course__box:hover {
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+@media(max-width:700px) {
+    .course__box {
+        flex-direction: column;
+    }
+}
