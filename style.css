@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.header__section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./image/eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav__item {
+    flex: 1;
+    text-align: right;
+}
+
+.nav__item ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav__item ul li a {
+    color: #FFFF;
+    font-size: 18px;
+}
+
+.nav__item ul li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav__item ul li:hover::after {
+    width: 100%;
+}
+.text__box {
+    width: 90%;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text__box h1 {
+ font-size: 62px;
+ font-family: 'Poppins', sans-serif;
+}
+.text__box p{
+    margin: 10px 0 5rem;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.hero__button {
+    display: inline-block;
+    color: #FFF;
+    border: 2px solid #FFFF;
+    padding: 12px 2rem;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero__button:hover {
+    border: 2px solid #F44336;
+    background: #F44336;
+    transition: 1s;
+}
+nav .bx {
+    display: none;
+}
+@media(max-width:700px) {
+    .text__box h1 {
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+       }
+       .nav__item ul li {
+        display: block;
+       }
+       .nav__item {
+        position: absolute;
+        background: #F44336;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+       }
+       nav .bx {
+        display: block;
+        color: #FFFF;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+       }
+       .nav__item ul {
+        padding: 2rem;
+       }
+}
