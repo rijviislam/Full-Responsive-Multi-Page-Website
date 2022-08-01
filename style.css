@@ -179,7 +179,7 @@ h3 {
  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 @media(max-width:700px) {
-    .course__box {
+    .course__container {
         flex-direction: column;
     }
 }
