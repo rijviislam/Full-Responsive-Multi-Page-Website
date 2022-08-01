@@ -234,3 +234,44 @@ h3 {
   bottom: 49%;
   opacity: 1;
 }
+@media(max-width:700px) {
+    .campus__container {
+        flex-direction: column;
+    }
+}
+
+/* FACILITIES    */
+.facilities {
+    margin: auto;
+    padding-top: 3rem;
+    width: 80%;
+    text-align: center;
+}
+.facilities__container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.facilities__box {
+    flex-basis: 31%;
+    border-radius: 5px;
+    text-align: left; 
+    margin-bottom: 5%;
+}
+.facilities__box img {
+    width: 100%;
+    border-radius: 5px;
+}
+.facilities__box h3 {
+    margin: 1rem 0;
+    text-align: left;
+}
+.facilities__box p {
+    margin: 0;
+    padding: 0;
+}
+@media(max-width:700px) {
+    .facilities__container {
+        flex-direction: column;
+    }
+}
