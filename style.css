@@ -20,7 +20,7 @@ ul li {
 .header__section {
     width: 100%;
     min-height: 100vh;
-    background-image: url(./image/eduford_img/pexels-banner.jpg);
+    background-image: url(./image/eduford_img/pexels-adrian-.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -77,11 +77,12 @@ nav img {
 }
 .text__box h1 {
  font-size: 62px;
+ color: #EEEE;
  font-family: 'Poppins', sans-serif;
 }
 .text__box p{
     margin: 10px 0 5rem;
-    color: #FFF;
+    color: #eeee;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
